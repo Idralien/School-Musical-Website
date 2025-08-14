@@ -60,6 +60,6 @@ Notes:
 -  For protection I erased confident information from the images.
 -  At last if they want to keep updated, I added the option to submit your email so the school knows who wants to be updated but this will probably be removed since the school has their own way of communicating already 😊
 
-### I already learned a lot from this first real web project 😁
+### It is just 1 html file but the rest will follow. I already learned a lot from this first real web project 😁
 
 ---
