@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Koop Tickets - Basisschool Sint-Jozef Musical</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .hero-bg {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1492684223066-81342ee5ff30?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .ticket-card {
+            transition: all 0.3s ease;
+        }
+        
+        .ticket-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body class="font-sans bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-indigo-900 text-white shadow-lg">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <img src="sji_logo.png" alt="Basisschool Sint-Jozef Logo" class="h-10 w-10">
+                <span class="text-xl font-bold">Basisschool Sint-Jozef</span>
+            </div>
+            <div class="hidden md:flex space-x-6">
+                <a href="index.html#musical" class="hover:text-yellow-300 transition">Musical</a>
+                <a href="index.html#klas" class="hover:text-yellow-300 transition">Klas</a>
+                <a href="index.html#tickets" class="hover:text-yellow-300 transition">Tickets</a>
+                <a href="index.html#contact" class="hover:text-yellow-300 transition">Contact</a>
+            </div>
+            <button class="md:hidden text-2xl" id="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+        <!-- Mobile menu -->
+        <div class="md:hidden hidden bg-indigo-800 px-4 py-2" id="mobile-menu">
+            <a href="index.html#musical" class="block py-2 hover:text-yellow-300 transition">Musical</a>
+            <a href="index.html#klas" class="block py-2 hover:text-yellow-300 transition">Klas</a>
+            <a href="index.html#tickets" class="block py-2 hover:text-yellow-300 transition">Tickets</a>
+            <a href="index.html#contact" class="block py-2 hover:text-yellow-300 transition">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-bg text-white py-20 md:py-32 px-4 text-center">
+        <div class="max-w-4xl mx-auto">
+            <h1 class="text-4xl md:text-6xl font-bold mb-4">Koop je tickets</h1>
+            <p class="text-xl md:text-2xl mb-8">Voor de musical "Niet te filmen" van Basisschool Sint-Jozef</p>
+        </div>
+    </section>
+
+    <!-- Tickets Section -->
+    <section class="py-16 px-4 bg-white">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Ticket Option 1 -->
+                <div class="ticket-card bg-white rounded-xl shadow-lg overflow-hidden border-2 border-indigo-500">
+                    <div class="bg-indigo-700 text-white py-4 text-center">
+                        <h3 class="font-bold text-xl">Standaard Ticket</h3>
+                    </div>
+                    <div class="p-6">
+                        <div class="text-center mb-6">
+                            <span class="text-4xl font-bold text-indigo-900">€5</span>
+                            <span class="text-gray-500">/ ticket</span>
+                        </div>
+                        <ul class="space-y-3 mb-8">
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                <span>Eén stoel per ticket</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                <span>Maximum 3 tickets per bestelling</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                <span>Programma inclusief</span>
+                            </li>
+                        </ul>
+                        <button class="w-full bg-yellow-500 hover:bg-yellow-600 text-indigo-900 font-bold py-3 px-4 rounded-full transition">
+                            Selecteer <i class="fas fa-ticket-alt ml-2"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Ticket Option 2 -->
+                <div class="ticket-card bg-white rounded-xl shadow-lg overflow-hidden border-2 border-indigo-500">
+                    <div class="bg-indigo-700 text-white py-4 text-center">
+                        <h3 class="font-bold text-xl">VIP Pakket</h3>
+                    </div>
+                    <div class="p-6">
+                        <div class="text-center mb-6">
+                            <span class="text-4xl font-bold text-indigo-900">€15</span>
+                            <span class="text-gray-500">/ ticket</span>
+                        </div>
+                        <ul class="space-y-3 mb-8">
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                <span>Premium zitplaatsen</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                <span>Ontmoet de cast na de show</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                <span>Gesigneerd programma</span>
+                            </li>
+                        </ul>
+                        <button class="w-full bg-yellow-500 hover:bg-yellow-600 text-indigo-900 font-bold py-3 px-4 rounded-full transition">
+                            Selecteer <i class="fas fa-ticket-alt ml-2"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Checkout Form -->
+            <div class="max-w-2xl mx-auto mt-16 bg-gray-100 p-8 rounded-lg">
+                <h3 class="text-2xl font-bold text-center mb-6 text-indigo-900">Bestelling</h3>
+                <form>
+                    <div class="mb-4">
+                        <label class="block text-gray-700 mb-2">Ticket Type</label>
+                        <select class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                            <option>Standaard Ticket - €5</option>
+                            <option>VIP Pakket - €15</option>
+                        </select>
+                    </div>
+                    
+                    <div class="mb-4">
+                        <label class="block text-gray-700 mb-2">Aantal tickets</label>
+                        <input type="number" min="1" max="5" value="1" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                    </div>
+
+                    <div class="mb-6">
+                        <label class="block text-gray-700 mb-2">Datum</label>
+                        <select class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                            <option>28 juni 2025 - 19:00</option>
+                            <option>29 juni 2025 - 14:00</option>
+                        </select>
+                    </div>
+
+                    <div class="bg-white p-4 rounded-lg mb-6">
+                        <div class="flex justify-between mb-2">
+                            <span>Tickets (1 x €5)</span>
+                            <span>€5.00</span>
+                        </div>
+                        <div class="flex justify-between font-bold text-lg">
+                            <span>Totaal</span>
+                            <span>€5.00</span>
+                        </div>
+                    </div>
+
+                    <button class="w-full bg-indigo-700 hover:bg-indigo-800 text-white font-bold py-3 px-4 rounded-full transition mb-4">
+                        Doorgaan naar betaling <i class="fas fa-arrow-right ml-2"></i>
+                    </button>
+
+                    <p class="text-sm text-gray-500 text-center">
+                        <i class="fas fa-lock mr-2"></i> Uw betalingsgegevens worden veilig verwerkt
+                    </p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8 px-4">
+        <div class="max-w-6xl mx-auto">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <div class="flex items-center space-x-2">
+                        <img src="sji_logo.png" alt="Basisschool Sint-Jozef Logo" class="h-10 w-10">
+                        <span class="text-xl font-bold">Basisschool Sint-Jozef</span>
+                    </div>
+                    <p class="text-sm text-gray-400 mt-2">Musical "Niet te filmen" - 6de leerjaar</p>
+                </div>                
+                
+                <div class="text-sm text-gray-400">
+                    <p>&copy; 2025 Basisschool Sint-Jozef</p>
+                    <p class="mt-1">Alle rechten voorbehouden</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
