@@ -3,14 +3,17 @@ I got the opportunity to make a Website for a school play. This project is being
 
 ---
 <p align="center">
-  <img width="1186" height="1243" alt="Schermafbeelding 2025-08-12 180342" src="https://github.com/user-attachments/assets/116393c5-f830-48e0-b93d-7b1678b1d510" />
+  <img width="1232" height="655" alt="Schermafbeelding 2025-08-24 005940" src="https://github.com/user-attachments/assets/03f45011-0be2-4056-9aed-bcc51a020752" />
 </p>
 
-Here you can see multiple things:
+Here you can see multiple things (UPDATED):
 
--  The navigation bar redirects you immediately to where you want to go on the website.
--  There are multiple buttons to go to the tickets since this is where we want the user to go towards.
--  Added a small countdown timer to make the event feel more alive.
+-  The navigation bar redirects you immediately to where you want to go on the website
+-  There are multiple buttons to go to the tickets since this is where we want the user to go towards
+-  Added a small working countdown timer to make the event feel more alive (UPDATED)
+-  School logo has been made cleaner (UPDATED)
+-  Background picture has been changed to fit the theme more (UPDATED)
+-  Added a dark mode (UPDATED)
 
 ### All pictures and the full website are probably going to change heavily next weeks
 
