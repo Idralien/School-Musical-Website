@@ -3,50 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Springfield High School Presents: Romeo & Juliet</title>
+    <title>Sint-Jozef school musical</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
-        .hero-bg {
-            background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1492684223066-81342ee5ff30?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80');
-            background-size: cover;
-            background-position: center;
-        }
-        
-        .ticket-card {
-            transition: all 0.3s ease;
-        }
-        
-        .ticket-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
-        }
-        
-        .cast-member:hover img {
-            transform: scale(1.05);
-        }
-        
-        .cast-member img {
-            transition: transform 0.3s ease;
-        }
-        
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
-        }
-        
-        .animate-fade-in {
-            animation: fadeIn 1s ease-in-out;
-        }
-    </style>
+    <script src="javascript.js"></script>
+    <link rel="stylesheet" href="sji.css">
 </head>
 <body class="font-sans bg-gray-50">
     <!-- Navigation -->
-    <nav class="bg-indigo-900 text-white shadow-lg">
+    <nav class="bg-[#017f98] text-white shadow-lg">
         <div class="container mx-auto px-4 py-3 flex justify-between items-center">
             <div class="flex items-center space-x-2">
-                <img src="sji_logo.png" alt="Basisschool Sint-Jozef Logo" class="h-10 w-10">
+                <img src="logo_trans_groot.png" alt="Basisschool Sint-Jozef Logo" class="h-10 w-10">
                 <span class="text-xl font-bold">Basisschool Sint-Jozef</span>
+                <button onclick="toggleDarkMode()" class="ml-4 p-2 rounded bg-gray-700 text-white">
+                    <i class="fas fa-moon"></i>
+                </button>
             </div>
             <div class="hidden md:flex space-x-6">
                 <a href="#musical" class="hover:text-yellow-300 transition">Musical</a>
@@ -67,7 +39,7 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
+    <!-- Header Section -->
     <section class="hero-bg text-white py-20 md:py-32 px-4 text-center">
         <div class="max-w-4xl mx-auto animate-fade-in">
             <h1 class="text-4xl md:text-6xl font-bold mb-4">Niet te filmen</h1>
@@ -83,8 +55,20 @@
         </div>
     </section>
 
+    <!-- Countdown timer javascript.js -->
+    <div class="bg-[#017f98] text-white py-4">
+        <div class="container mx-auto px-4 text-center">
+            <p class="text-lg mb-2">De show begint over:</p>
+            <div class="flex justify-center space-x-4">
+                <div class="bg-white text-[#017f98] rounded-lg p-2 w-100">
+                    <div class="text-2xl font-bold" id="countdown"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+  
     <!-- Countdown -->
-    <div class="bg-indigo-800 text-white py-4">
+<!--    <div class="bg-[#017f98] text-white py-4">
         <div class="container mx-auto px-4 text-center">
             <p class="text-lg mb-2">De show begint over:</p>
             <div class="flex justify-center space-x-4">
@@ -107,6 +91,7 @@
             </div>
         </div>
     </div>
+-->
 
     <!-- About Section -->
     <section id="musical" class="py-16 px-4 bg-white">
@@ -348,50 +333,31 @@
         </div>
     </section>
 
-    <!-- Newsletter -->
-    <section class="py-12 px-4 bg-indigo-900 text-white">
-        <div class="max-w-4xl mx-auto text-center">
-            <h2 class="text-2xl font-bold mb-4">Blijf up-to-date met volgende evenementen</h2>
-            <p class="mb-6">Geef je e-mailadres in en blijf op de hoogte van toekomstige evenementen</p>
-            <div class="flex flex-col md:flex-row gap-2 max-w-md mx-auto">
-                <input type="email" placeholder="Your email address" class="flex-grow px-4 py-2 rounded-full text-gray-900 focus:outline-none focus:ring-2 focus:ring-yellow-500">
-                <button class="bg-yellow-500 hover:bg-yellow-600 text-indigo-900 font-bold py-2 px-6 rounded-full transition">
-                    Subscribe <i class="fas fa-envelope ml-2"></i>
-                </button>
-            </div>
-        </div>
-    </section>
-
     <!-- Footer -->
-    <footer class="bg-gray-900 text-white py-8 px-4">
+    <footer class="bg-[#017f98] text-white py-8 px-4">
         <div class="max-w-6xl mx-auto">
             <div class="flex flex-col md:flex-row justify-between items-center">
                 <div class="mb-4 md:mb-0">
                     <div class="flex items-center space-x-2">
-                        <img src="sji_logo.png" alt="Basisschool Sint-Jozef Logo" class="h-10 w-10">
+                        <img src="logo_trans_groot.png" alt="Basisschool Sint-Jozef Logo" class="h-10 w-10">
                 <span class="text-xl font-bold">Basisschool Sint-Jozef</span>
                     </div>
-                    <p class="text-sm text-gray-400 mt-2">Inspiring creativity since 1985</p>
+                    <p class="text-sm text-white-400 mt-2">Inspiring creativity</p>
                 </div>                
                 <div class="flex space-x-6 mb-4 md:mb-0">
-                    <a href="#" class="text-gray-400 hover:text-white transition">
+                    <a href="#" class="text-white-400 hover:text-white transition">
                         <i class="fab fa-facebook-f"></i>
                     </a>
-                    <a href="#" class="text-gray-400 hover:text-white transition">
-                        <i class="fab fa-twitter"></i>
-                    </a>
-                    <a href="#" class="text-gray-400 hover:text-white transition">
+                    <a href="#" class="text-white-400 hover:text-white transition">
                         <i class="fab fa-instagram"></i>
                     </a>
-                    <a href="#" class="text-gray-400 hover:text-white transition">
-                        <i class="fab fa-youtube"></i>
-                    </a>
+
                 </div>
                 
-                <div class="text-sm text-gray-400">
-                    <p>&copy; 2026 Basisschool Sint-Jozef. 6de leerjaar</p>
+                <div class="text-sm text-white-400">
+                    <p>2026 Basisschool Sint-Jozef. 6de leerjaar</p>
                     </section></p>
-                    <p class="mt-1">All rights reserved</p>
+                    <p class="mt-1"></p>
                 </div>
             </div>
         </div>
@@ -449,86 +415,5 @@
             <p class="text-sm text-gray-500 text-center">Tickets are non-refundable. All sales support the Springfield High Drama program.</p>
         </div>
     </div>
-
-    <script>
-        // Countdown timer
-        function updateCountdown() {
-            const now = new Date();
-            const targetDate = new Date('May 15, 2023 19:00:00');
-            const difference = targetDate - now;
-            
-            if (difference <= 0) {
-                document.getElementById('days').textContent = '00';
-                document.getElementById('hours').textContent = '00';
-                document.getElementById('minutes').textContent = '00';
-                document.getElementById('seconds').textContent = '00';
-                return;
-            }
-            
-            const days = Math.floor(difference / (1000 * 60 * 60 * 24));
-            const hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
-            const seconds = Math.floor((difference % (1000 * 60)) / 1000);
-            
-            document.getElementById('days').textContent = days.toString().padStart(2, '0');
-            document.getElementById('hours').textContent = hours.toString().padStart(2, '0');
-            document.getElementById('minutes').textContent = minutes.toString().padStart(2, '0');
-            document.getElementById('seconds').textContent = seconds.toString().padStart(2, '0');
-        }
-        
-        setInterval(updateCountdown, 1000);
-        updateCountdown();
-        
-        // Mobile menu toggle
-        document.getElementById('menu-toggle').addEventListener('click', function() {
-            const menu = document.getElementById('mobile-menu');
-            menu.classList.toggle('hidden');
-        });
-        
-        // Ticket modal functionality
-        const ticketButtons = document.querySelectorAll('.ticket-card button, .hero-bg button:first-child');
-        const modal = document.getElementById('ticket-modal');
-        const closeModal = document.getElementById('close-modal');
-        
-        ticketButtons.forEach(button => {
-            button.addEventListener('click', function() {
-                modal.classList.remove('hidden');
-            });
-        });
-        
-        closeModal.addEventListener('click', function() {
-            modal.classList.add('hidden');
-        });
-        
-        // Close modal when clicking outside
-        modal.addEventListener('click', function(e) {
-            if (e.target === modal) {
-                modal.classList.add('hidden');
-            }
-        });
-        
-        // Smooth scrolling for navigation links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-                
-                const targetId = this.getAttribute('href');
-                const targetElement = document.querySelector(targetId);
-                
-                if (targetElement) {
-                    window.scrollTo({
-                        top: targetElement.offsetTop - 20,
-                        behavior: 'smooth'
-                    });
-                    
-                    // Close mobile menu if open
-                    const mobileMenu = document.getElementById('mobile-menu');
-                    if (!mobileMenu.classList.contains('hidden')) {
-                        mobileMenu.classList.add('hidden');
-                    }
-                }
-            });
-        });
-    </script>
 </body>
 </html>
