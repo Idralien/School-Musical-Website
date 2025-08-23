@@ -53,7 +53,7 @@ I think it would be fun for the parents and family members to read previous expe
 ---
 
 <p>
-  <img width="1194" height="1209" alt="Schermafbeelding 2025-08-12 180446" src="https://github.com/user-attachments/assets/f902c0ba-98db-41e4-8e3c-aa014b557e22" />
+  <img width="1227" height="973" alt="Schermafbeelding 2025-08-24 011332" src="https://github.com/user-attachments/assets/b9a8646a-5dd9-4d03-97c8-6f9255f211d1" />
 </p>
 
 Notes:
@@ -61,8 +61,9 @@ Notes:
 -  Since not everyone is from the area itself, I added a map so people can easily learn where it is located and where they can park
 -  For extra I gave the option to specifically ask a question about the musical that gets send to the right person.
 -  For protection I erased confident information from the images.
--  At last if they want to keep updated, I added the option to submit your email so the school knows who wants to be updated but this will probably be removed since the school has their own way of communicating already 😊
+-  At last if they want to keep updated, I added the option to submit your email so the school knows who wants to be updated but this will probably be removed since the school has their own way of communicating already 😊 (REMOVED IN UPDATE)
+-  Changed colour to fit the logos colour theme more (UPDATED)
 
-### It is just 1 html file but the rest will follow. I already learned a lot from this first real web project 😁
+### All files are being updated regularly when new things are learned. I already learned a lot from this first real web project 😁
 
 ---
