@@ -1,0 +1,63 @@
+/*body 
+{
+    padding: 25px;
+    background-color: white;
+    color: black;
+    font-size: 25px;
+}
+*/
+.dark-mode
+{
+    background-color: black;
+    color: white;
+}
+
+.hero-bg 
+{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('clapper_1.jpg');
+    background-size: cover;
+    background-position: center;
+}
+        
+.ticket-card 
+{
+    transition: all 0.3s ease;
+}
+        
+.ticket-card:hover 
+{
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+        
+.cast-member:hover img 
+{
+    transform: scale(1.05);
+}
+        
+.cast-member img 
+{
+    transition: transform 0.3s ease;
+}
+        
+@keyframes fadeIn 
+{
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+        
+.animate-fade-in 
+{
+    animation: fadeIn 1s ease-in-out;
+}
+
+.stroke {
+  -webkit-text-stroke: 1px black;
+   color: white;
+   text-shadow:
+       3px 3px 0 #000,
+     -1px -1px 0 #000,  
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+       1px 1px 0 #000;
+}
